@@ -25,7 +25,7 @@
             <span class="form__label--item">性別</span>
             <span class="form__label--required">※</span>
             <label>
-                <input type="radio" name="gender" value="male">男性
+                <input type="radio" name="gender" value="male" checked>男性
             </label>
             <label>
                 <input type="radio" name="gender" value="female">女性

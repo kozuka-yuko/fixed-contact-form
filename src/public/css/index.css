@@ -13,9 +13,8 @@ h2 {
 }
 
 .form {
-    margin: 0 auto;
     width: 70%;
-    text-align: center;
+    margin: 0 auto;
 }
 
 .form__group {
@@ -45,19 +44,11 @@ h2 {
     color: #8B7969;
 }
 
-.form__input--text input {
-    height: 40px;
-}
-
-.form__input--textarea textarea {
-    height: 180px;
-}
-
-.form__button {
+.contact-form__button {
     margin-top: 30px;
 }
 
-.form__button-submit {
+.contact-form__button-submit {
     padding: 10px;
     width: 30%;
     height: 50px;
