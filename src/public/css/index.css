@@ -1,0 +1,69 @@
+.contact-form__content {
+    padding: 30px 15px;
+}
+
+.contact-form__heading {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 20px;
+    color: #8B7969;
+}
+
+.form {
+    margin: 0 auto;
+    width: 70%;
+    text-align: center;
+}
+
+.form__group {
+    margin-bottom: 15px;
+}
+
+.form__label--item {
+    color: #D2B48C;
+}
+
+.form__label--required {
+    color: #FF0000;
+}
+
+.form__error {
+    height: 20px;
+    color: #ff0000;
+    text-align: left;
+}
+
+.form__input--text input,
+.form__input--textarea textarea {
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #F5F5F5;
+    color: #8B7969;
+}
+
+.form__input--text input {
+    height: 40px;
+}
+
+.form__input--textarea textarea {
+    height: 180px;
+}
+
+.form__button {
+    margin-top: 30px;
+}
+
+.form__button-submit {
+    padding: 10px;
+    width: 30%;
+    height: 50px;
+    border: none;
+    border-radius: 3px;
+    background: #D2B48C;
+    color: #fff;
+    cursor: pointer;
+}
