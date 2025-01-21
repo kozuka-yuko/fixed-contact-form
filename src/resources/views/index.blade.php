@@ -10,7 +10,7 @@
     <div class="contact-form__heading">
         <h2>Contact</h2>
     </div>
-    <form action="" class="form" method="">
+    <form action="{{ route('confirm') }}" class="form" method="post">
         @csrf
         <div class="form__group">
             <span class="form__label--item">お名前</span>

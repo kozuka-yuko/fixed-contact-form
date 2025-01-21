@@ -10,4 +10,11 @@ class ContactController extends Controller
     {
         return view('/index');
     }
+
+    public function confirm(Request $request)
+    {
+        $request->all();
+
+        return view('/confirm', compact('request'));
+    }
 }
