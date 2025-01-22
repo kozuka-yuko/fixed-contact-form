@@ -33,6 +33,7 @@ h2 {
     height: 20px;
     color: #ff0000;
     text-align: left;
+    padding-left: 30px;
 }
 
 .form__input--text input,
