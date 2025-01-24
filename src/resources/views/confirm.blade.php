@@ -60,6 +60,7 @@
                     <th class="confirm-table__header">お問い合わせの種類
                     </th>
                     <td class="confirm-table__text">
+                        <input type="hidden" name="category_id" value="{{ $content->id }}">
                         <input type="text" name="content" value="{{ $request->content }}" readonly />
                     </td>
                 </tr>

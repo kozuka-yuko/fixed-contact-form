@@ -18,6 +18,7 @@ class ContactController extends Controller
     public function confirm(ContactRequest $request)
     {
         $request->all();
+        $content = Category::where('content', $request->content)->first();
         $fullName = $request->first_name. "". $request->last_name;
         $tel = $request->tel1. '-'. $request->tel2. '-'. $request->tel3;
         $gender = $request->input('gender');
@@ -29,15 +30,13 @@ class ContactController extends Controller
             $gender_display = 'その他';
         }
 
-        return view('confirm', compact('request', 'fullName', 'tel', 'gender_display'));
+        return view('confirm', compact('request', 'fullName', 'tel', 'gender_display', 'content'));
     }
 
     public function store(Request $request)
     {
         $tel = $request->tel1 . '-' . $request->tel2 . '-' . $request->tel3;
-        $category_id = Category::where($request->content)->id->first();
-        $data = $request->only(['first_name', 'last_name', 'gender', 'email', 'address', 'building', 'detail']);
-        $data['category_id'] = $category_id;
+        $data = $request->only(['first_name', 'last_name', 'gender', 'email', 'address', 'building', 'detail', 'category_id']);
         $data['tel'] = $tel;
 
         Contact::create($data);
