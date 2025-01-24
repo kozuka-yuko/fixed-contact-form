@@ -63,15 +63,9 @@
             -
             <input type="tel" class="phone-input" name="tel3" placeholder="5678" value="{{ old('tel3') }}" />
             <div class="form__error">
-                @error('tel1')
-                {{ $message }}
-                @enderror
-                @error('tel2')
-                {{ $message }}
-                @enderror
-                @error('tel3')
-                {{ $message }}
-                @enderror
+                @if ($errors->has('tel1') || $errors->has('tel2') || $errors->has('tel3'))
+                <p>電話番号を正しく入力してください</p>
+                @endif
             </div>
         </div>
         <div class="form__group">
@@ -91,11 +85,11 @@
         <div class="form__group">
             <span class="form__label--item">お問い合わせの種類</span>
             <span class="form__label--required">※</span>
-            <select name="contact-type">
+            <select name="content">
                 <option disabled selected>選択してください</option>
-
-                <option value=""></option>
-
+                @foreach($contents as $content)
+                <option value="{{ $content->content }}">{{ $content->content }}</option>
+                @endforeach
             </select>
             <div class="form__error">
                 @error('content')
