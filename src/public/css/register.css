@@ -4,12 +4,14 @@
     padding: 10px 20px;
 }
 
-.header__button-login {
-    width: 100%;
+.login {
+    padding: 10px 20px;
     background-color: #F5F5F5;
     color: #D2B48C;
     border-color: #D2B48C;
     border-radius: 3px;
+    text-decoration: none;
+    cursor: pointer;
 }
 
 .register__content {

@@ -85,7 +85,7 @@
         <div class="form__group">
             <span class="form__label--item">お問い合わせの種類</span>
             <span class="form__label--required">※</span>
-            <select name="content">
+            <select name="category_id">
                 <option disabled selected>選択してください</option>
                 @foreach($contents as $content)
                 <option value="{{ $content->content }}">{{ $content->content }}</option>

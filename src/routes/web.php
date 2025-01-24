@@ -1,8 +1,8 @@
 <?php
 
 use App\Http\Controllers\ContactController;
-use App\Models\Contact;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AuthController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,3 +18,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', [ContactController::class, 'index'])->name('index');
 Route::post('/confirm', [ContactController::class, 'confirm'])->name('confirm');
 Route::post('/confirm/store', [ContactController::class, 'store'])->name('store');
+Route::middleware('auth')->group(function () {
+    Route::get('/admin', [AuthController::class, 'admin'])->name('admin');
+});

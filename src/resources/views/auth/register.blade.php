@@ -5,10 +5,7 @@
 @endsection
 
 @section('button')
-<form action="/login" class="form-login" method="post">
-    @csrf
-    <button class="header__button-login" type="submit">login</button>
-</form>
+    <a href="/login" class="login">login</a>
 @endsection
 
 @section('content')
@@ -16,23 +13,29 @@
     <div class="register__heading">
         <h2>Register</h2>
     </div>
-    <form class="form" action="" method="">
+    <form class="form" action="/register" method="post">
         @csrf
         <div class="form__group">
             <p>お名前</p>
-            <input type="email" name="email" placeholder="例:山田  太郎" value="{{ old('name') }}" />
+            <input type="text" name="name" placeholder="例:山田  太郎" value="{{ old('name') }}" />
             <div class="form__error">
-                
+                @error('name')
+                {{ $message }}
+                @enderror
             </div>
             <p>メールアドレス</p>
             <input type="email" name="email" placeholder="例:test@example.com" value="{{ old('email') }}" />
             <div class="form__error">
-                
+                @error('email')
+                {{ $message }}
+                @enderror
             </div>
             <p>パスワード</p>
             <input type="password" name="password" placeholder="例:coachtech1106">
             <div class="form__error">
-               
+                @error('password')
+                {{ $message }}
+                @enderror
             </div>
         </div>
         <div class="form__button">

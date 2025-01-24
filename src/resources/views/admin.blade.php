@@ -5,7 +5,7 @@
 @endsection
 
 @section('button')
-<form action="" class="form-logout" method="">
+<form action="/logout" class="form-logout" method="post">
     @csrf
     <button class="header__button-logout" type="submit">logout</button>
 </form>
@@ -14,7 +14,7 @@
 @section('content')
 <div class="admin__content">
     <div class="admin__heading">
-        <h2>Admin</h2>
+        <h2 class="admin">Admin</h2>
     </div>
     <div class="search-form">
         <form action="" class="form" method="post">
@@ -32,29 +32,14 @@
                     <option value=""></option>
                 </select>
                 <input class="birth" type="date" name="birth" />
-            </div>
-            <div class="search-form__button">
                 <button class="search-form__button-submit" type="submit">検索</button>
             </div>
         </form>
-        <form action="" class="reset-form" method="get">
-            @csrf
-            <div class="reset-form__button">
-                <button class="reset-form__button-reset" type="reset">リセット</button>
-            </div>
-        </form>
+        <button class="reset-form__button-reset" type="reset">リセット</button>
     </div>
-    <form action="" class="export-form" method="post">
-        @csrf
-        <div class="admin__button">
-            <div class="export__button">
-                <button type="submit" class="export__button-submit">エクスポート</button>
-            </div>
-            <div class="paginate__button">
-                <button type="submit" class="paginate__button-submit"></button>
-            </div>
+        <div class="export__button">
+            <button type="submit" class="export__button-submit">エクスポート</button>
         </div>
-    </form>
     <div class="admin-table">
         <table class="admin-table__inner">
             <tr class="admin-table__row">
@@ -65,7 +50,7 @@
                     <span>お問い合わせの種類</span>
                 </th>
             </tr>
-            
+
             <tr class="admin-table__row">
                 <td class="admin-table__text">
                     <input type="text" name="name" value="" />
@@ -80,7 +65,7 @@
                     <input type="text" name="contact-type" value="" />
                 </td>
             </tr>
-            
+
         </table>
 
         <button class="detail__button-submit" id="openModalBtn" type="submit">詳細</button>

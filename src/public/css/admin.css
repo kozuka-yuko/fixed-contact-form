@@ -1,14 +1,14 @@
 .form-logout {
     display: inline-block;
-    width: 20%;
-    padding: 10px 20px;
 }
 
 .header__button-logout {
-    width: 100%;
     background-color: #F5F5F5;
     color: #D2B48C;
     border-color: #D2B48C;
+    padding: 5px 15px;
+    border-radius: 5px;
+    font-family: math;
 }
 
 .admin__content {
@@ -22,9 +22,10 @@
     text-align: center;
 }
 
-h2 {
+.admin {
     font-size: 20px;
     color: #8B7969;
+    font-family: math;
 }
 
 .search-form {
@@ -53,9 +54,7 @@ select {
 }
 
 .search-form__button-submit {
-    padding: 10px auto;
-    width: 30%;
-    height: 50px;
+    padding: 5px 15px;
     border: none;
     border-radius: 3px;
     background: #8B7969;
@@ -63,20 +62,8 @@ select {
     cursor: pointer;
 }
 
-.reset-form {
-    margin: 0 auto;
-    width: 20%;
-}
-
-.reset-form__button {
-    margin-top: 30px;
-    text-align: center;
-}
-
 .reset-form__button-reset {
-    padding: 10px auto;
-    width: 30%;
-    height: 50px;
+    padding: 5px 15px;
     border: none;
     border-radius: 3px;
     background: #FAEBD7;
@@ -84,27 +71,12 @@ select {
     cursor: pointer;
 }
 
-.export-form {
-    width: 70%;
-    padding: 15px auto;
-}
-
-.admin__button {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0 auto;
-}
-
 .export__button {
-    margin-top: 30px;
-    text-align: center;
+    margin: 15px;
 }
 
 .export__button-submit {
-    padding: 10px auto;
-    width: 30%;
-    height: 50px;
+    padding: 5px 15px;
     border: none;
     border-radius: 3px;
     background: #F5F5F5;
