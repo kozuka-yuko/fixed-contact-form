@@ -8,7 +8,7 @@
 
 <div class="contact-form__content">
     <div class="contact-form__heading">
-        <h2>Contact</h2>
+        <h2 class="title">Contact</h2>
     </div>
     <form action="{{ route('confirm') }}" class="form" method="post">
         @csrf
@@ -87,12 +87,12 @@
             <span class="form__label--required">※</span>
             <select name="category_id">
                 <option disabled selected>選択してください</option>
-                @foreach($contents as $content)
-                <option value="{{ $content->content }}">{{ $content->content }}</option>
+                @foreach ($contents as $content)
+                <option value="{{ $content->id }}">{{ $content->content }}</option>
                 @endforeach
             </select>
             <div class="form__error">
-                @error('content')
+                @error('category_id')
                 {{ $message }}
                 @enderror
             </div>

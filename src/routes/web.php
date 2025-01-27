@@ -20,4 +20,5 @@ Route::post('/confirm', [ContactController::class, 'confirm'])->name('confirm');
 Route::post('/confirm/store', [ContactController::class, 'store'])->name('store');
 Route::middleware('auth')->group(function () {
     Route::get('/admin', [AuthController::class, 'admin'])->name('admin');
+    Route::get('/csv-download', [AuthController::class, 'downloadCsv'])->name('downloadCsv');
 });

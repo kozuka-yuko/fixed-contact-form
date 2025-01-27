@@ -1,5 +1,8 @@
 .form-logout {
     display: inline-block;
+    position: relative;
+    left: 450px;
+    padding: 5px 15px;
 }
 
 .header__button-logout {
@@ -9,12 +12,12 @@
     padding: 5px 15px;
     border-radius: 5px;
     font-family: math;
+    font-weight: 23px;
 }
 
 .admin__content {
     margin: 0 auto;
     padding: 30px 15px;
-    max-width: 1230px;
 }
 
 .admin__heading {
@@ -90,9 +93,7 @@ select {
 }
 
 .paginate__button-submit {
-    padding: 10px auto;
-    width: 30%;
-    height: 50px;
+    padding: 10px 20px;
     border-color: #D2B48C;
     border-radius: 5px;
     color: #8B7969;
@@ -122,27 +123,19 @@ select {
 
 .admin-table__text input {
     width: 100%;
-    outline: none;
     border: none;
     color: #D2B48C;
 }
 
-.admin-table__row:last-child .admin-table__header,
-.admin-table__row:last-child .admin-table__text {
-    border-bottom-width: 0;
-}
-
 .detail__button {
     display: inline-block;
-    width: 20%;
     padding: 10px 20px;
 }
 
 .detail__button-submit {
-    width: 100%;
     background-color: #F5F5F5;
     color: #D2B48C;
-    border-color: #D2B48C;
+    border: none;
     border-radius: 3px;
 }
 

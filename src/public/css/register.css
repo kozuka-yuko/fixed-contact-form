@@ -1,24 +1,14 @@
-.form-login {
-    display: inline-block;
-    width: 20%;
-    padding: 10px 20px;
-}
-
 .login {
-    padding: 10px 20px;
+    display: inline-block;
+    position: relative;
+    left: 450px;
+    padding: 5px 15px;
     background-color: #F5F5F5;
     color: #D2B48C;
-    border-color: #D2B48C;
+    border: 1px solid #bab6af;
     border-radius: 3px;
     text-decoration: none;
     cursor: pointer;
-}
-
-.register__content {
-    background-color: #F5F5F5;
-    margin: 0 auto;
-    padding: 30px 15px;
-    max-width: 1230px;
 }
 
 .register__heading {
@@ -26,14 +16,15 @@
     text-align: center;
 }
 
-h2 {
-    font-size: 20px;
+.title {
+    font-family: math;
+    font-size: 23px;
     color: #8B7969;
 }
 
 .form {
     margin: 0 auto;
-    width: 50%;
+    width: 40%;
     text-align: center;
     border-color: #D2B48C;
     border-radius: 5px;
@@ -41,8 +32,7 @@ h2 {
 }
 
 .form__group {
-    margin-bottom: 15px;
-    padding: 15px 25px;
+    padding: 15px 180px;
 }
 
 .form__group input {
@@ -50,9 +40,18 @@ h2 {
     color: #8B7969;
 }
 
-p {
+.name,
+.email,
+.password {
+    padding: 10px 20px;
+    width: 300px;
+    border: none;
+}
+
+.input {
     color: #8B7969;
     font-size: 18px;
+    text-align: left;
 }
 
 .form__error {
@@ -75,4 +74,5 @@ p {
     background: #8B7969;
     color: #fff;
     cursor: pointer;
+    margin-bottom: 40px;
 }

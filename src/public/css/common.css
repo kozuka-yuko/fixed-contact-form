@@ -1,10 +1,17 @@
+body {
+    background-color: #e9e4db;
+}
+
 .header {
     border-bottom: 1px solid #DCDCDC;
     text-align: center;
+    padding-left: 100px;
+    background-color: #FEFEFE;
 }
 
 .header__inner {
     padding: 20px 15px;
+    display: inline-block;
 }
 
 .header__logo {
